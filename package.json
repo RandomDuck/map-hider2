@@ -1,0 +1,30 @@
+{
+  "name": "map-hider2",
+  "version": "1.0.0",
+  "description": "A D&D map sharing and live play tool for use over distance.",
+  "main": "index.js",
+  "scripts": {
+    "server": "node index.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"nodemon index.js\" \"npm run client\"",
+    "start": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "RandomDucks",
+  "keywords": [
+    "D&D",
+    "map",
+    "live",
+    "play",
+    "VTT"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.1"
+  }
+}
